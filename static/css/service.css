@@ -1,0 +1,66 @@
+h1,h3, p, ul, li, a {
+    color: #fdfdfd; /* Text color */
+}
+
+.container ul, .container li, .container a {
+    margin: 10;
+    padding: 0;
+    color: #000000; /* Text color */
+}
+
+h1 {
+    margin-top: 30px;
+    color: black;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Product row styles */
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+/* Product item styles */
+.product-item {
+    width: 30%;
+    background-color: #D2354C; /* Background color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+}
+
+.product-item img {
+    width: 300px; /* Set the width */
+    height: 224.62px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.product-item ul li {
+    list-style: none;
+    padding: 10;
+    margin-top: 10px;
+    margin: 10px 0;
+}
+
+.product-item ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-item ul li a:hover {
+    text-decoration: underline;
+}
+
+

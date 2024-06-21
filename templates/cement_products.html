@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cement_products.css') }}">
+</head>
+
+<div class="cement-products-page">
+    <div class="red-bar">
+        <h2>ผลิตภัณฑ์ปูนซีเมนต์</h2>
+    </div>
+    <div class="cement-products-container">
+        <!-- tiger Cement Section -->
+        <div class="cement-brand-section">
+            <h3>ถุงปูนซีแพค</h3>
+            <div class="cement-product-item">
+                <img src="{{ url_for('static', filename='images/cement_bag/1.jpg') }}" alt="tiger Cement 1">
+                <img src="{{ url_for('static', filename='images/cement_bag/2.jpg') }}" alt="tiger Cement 2">
+                <img src="{{ url_for('static', filename='images/cement_bag/3.jpg') }}" alt="tiger Cement 3">
+                <img src="{{ url_for('static', filename='images/cement_bag/4.jpg') }}" alt="tiger Cement 4">
+                <img src="{{ url_for('static', filename='images/cement_bag/5.jpg') }}" alt="tiger Cement 5">
+                <img src="{{ url_for('static', filename='images/cement_bag/6.jpg') }}" alt="tiger Cement 6">
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="/service"><button class="btn btn-primary" type="button">ย้อนกลับ</button></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

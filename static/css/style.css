@@ -1,0 +1,159 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 5px;
+}
+
+.product-service {
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    flex: auto;
+}
+
+footer {
+    background-color: #D2354C;
+    color: #fff;
+    font-weight: 100;
+    padding: 0px 0;
+    text-decoration: none !important;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0cqmax;
+}
+
+footer div {
+    margin: 10px 0;
+}
+
+footer h3, footer p {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+footer ul li a {
+    color: #fff !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.footer-left p {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social ul li a img {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-left, .footer-middle, .footer-social {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,83 @@
+.cement-products-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cement-products-page .red-bar h2 {
+    text-align: center;
+}
+
+/* Red Bar Styles */
+.cement-products-page .red-bar {
+    background-color: #D2354C;
+    height: 60px;
+    color: #fff;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cement-products-page .cement-products-container {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.cement-products-page .cement-brand-section {
+    margin-bottom: 40px;
+}
+
+.cement-products-page .cement-brand-section h3 {
+    text-align: center;
+    color: #D2354C;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cement-products-page .cement-product-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.cement-products-page .cement-product-item img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.cement-products-page .cement-product-item img:hover {
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-container .btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #D2354C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: end;
+}
+
+.button-container .btn:hover {
+    background-color: #b52e41;
+}

@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Concrete_truck_brand.css') }}">
+</head>
+<div class="red-bar">
+    <h2>ยี่ห้อรถคอนกรีต</h2>
+</div>
+<div class="concrete-trucks-container">
+    <div class="concrete-truck-row">
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/4.png') }}" alt="Concrete Truck 1">
+            <p>ยี่ห้อรถคอนกรีต CPAC</p>
+        </div>
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/6.png') }}" alt="Concrete Truck 2">
+            <p>ยี่ห้อรถคอนกรีต NAMHENG GROP</p>
+        </div>
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/5.png') }}" alt="Concrete Truck 3">
+            <p>ยี่ห้อรถคอนกรีต อินทรี</p>
+        </div>
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/12.jpg') }}" alt="Concrete Truck 5">
+            <p>ยี่ห้อรถคอนกรีต วีคอนกรีต</p>
+        </div>
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/13.jpg') }}" alt="Concrete Truck 6">
+            <p>ยี่ห้อรถคอนกรีต ฉัตรคอนกรีต</p>
+        </div>
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/1.jpg') }}" alt="Concrete Truck 8">
+            <p>ยี่ห้อรถคอนกรีต Fast Concrete</p>
+        </div>
+    </div>
+    <div class="concrete-truck-row">
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/9.png') }}" alt="Concrete Truck 7">
+            <p>ยี่ห้อรถคอนกรีต กาญจนา</p>
+        </div>
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/3.png') }}" alt="Concrete Truck 9">
+            <p>ยี่ห้อรถคอนกรีต ซีเมนเอเชียจำกัด</p>
+        </div>
+        <div class="concrete-truck-item">
+            <img src="{{ url_for('static', filename='images/Cement_truck/7.png') }}" alt="Concrete Truck 10">
+            <p>ยี่ห้อรถคอนกรีต QMIX Concrete</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="/service"><button class="btn btn-primary" type="button">ย้อนกลับ</button></a>
+    </div>
+</div>
+{% endblock %}

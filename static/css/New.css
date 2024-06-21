@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10;
+  padding: 10;
+}
+
+.news-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 20px; 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 50px; /* เพิ่ม margin-bottom เพื่อป้องกันการทับกับ footer */
+}
+
+.news-container h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 20px; 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.news-container p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+.content-item {
+  width: calc(33% - 20px);
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.content-item img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.content-item p {
+  font-size: 16px;
+  text-align: left;
+}
+
+video {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container video {
+  width: 100%;
+  max-height: 240px;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.image-container:hover .overlay {
+  display: block;
+}

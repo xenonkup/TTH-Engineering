@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Selling_products.css') }}">
+</head>
+<div class="sell-product-container">
+    <div class="product1-container">
+        <div class="red-bar">
+            <h2>จำหน่ายแผ่นพื้นอิฐมวลเบา</h2>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/precast_concrete/6.jpg') }}" alt="concrete1">
+                    <p>อิฐบล็อก</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/precast_concrete/2.png') }}" alt="concrete2">
+                    <p>แผ่นพื้นคอนกรีตสำเร็จรูป แผ่นพื้นคอนกรีตอัดเเรง</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/precast_concrete/3.jpg') }}" alt="concrete3">
+                    <p>เสารั่วปูน</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/precast_concrete/5.jpg') }}" alt="concrete5">
+                    <p>เสาปูน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product2-container">
+        <div class="red-bar">
+            <h2>จำหน่ายเหล็ก</h2>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/iron/7.jpg') }}" alt="iron1">
+                    <p>เหล็กรูปพรรณ/เหล็กโครงสร้างรูปพรรณ</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/iron/4.jpg') }}" alt="iron2">
+                    <p>เหล็ก C</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/iron/3.jpg') }}" alt="iron3">
+                    <p>เหล็กท่อเหลี่ยม</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/iron/6.jpg') }}" alt="iron4">
+                    <p>เหล็ก ฉาก</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product3-container">
+        <div class="red-bar">
+            <h2>จำหน่ายถุงปูนซีเมนต์</h2>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/Sell_bags_of_cement/1.jpg') }}" alt="bags of cement1">
+                    <p>ถุงปูนตราเสือ ปูนซีเมนซ์ผสม ก่อ ฉาบ เท</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/Sell_bags_of_cement/2.jpg') }}" alt="bags of cement2">
+                    <p>ถุงปูนตราเสือ ฉาบสูตรพิเศษ</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/Sell_bags_of_cement/3.jpg') }}" alt="bags of cement3">
+                    <p>ถุงปูนตราเสือ มอร์ตาร์ ฉาบทั่วไป</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/Sell_bags_of_cement/4.jpg') }}" alt="bags of cement4">
+                    <p>ถุงปูนตราเสือ มอร์ตาร์ อิฐมวลเบา</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product4-container">
+        <div class="red-bar">
+            <h2>รับเหมาก่อสร้าง</h2>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/construction/1.jpg') }}" alt="construction contractor1">
+                    <p>ซีแพครถเล็ก งานเทพื้น หน้างาน</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/construction/2.jpg') }}" alt="construction contractor2">
+                    <p>เทปรับปรุงหอพัก หน้างานพรานนก ลูกค้า</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/construction/3.png') }}" alt="construction contractor3">
+                    <p>ต่อเติมบ้าน</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/construction/5.jpg') }}" alt="construction contractor4">
+                    <p>งาน เสาเข็มเจาะ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="/service"><button class="btn btn-primary" type="button">ย้อนกลับ</button></a>
+    </div>
+</div>
+{% endblock %}

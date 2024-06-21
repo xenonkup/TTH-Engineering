@@ -1,0 +1,94 @@
+.sell-product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product1-container, .product2-container, .product3-container, .product4-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.red-bar {
+  background-color: #D2354C;
+  height: 60px;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 4px 0 0;
+}
+
+.red-bar h2 {
+  margin: 0;
+}
+
+.carousel-container {
+  overflow-x: auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.carousel-item {
+  min-width: 420px;
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 420px;
+  height: 420px;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item p {
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  width: fit-content;
+  background: #f9f9f9; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button-container .btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #D2354C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: end;
+}
+
+.button-container .btn:hover {
+  background-color: #b52e41;
+}
+
