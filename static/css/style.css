@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ header .container {
 }
 
 header .logo {
-    height: 70px;
+    height: 120px;
 }
 
 nav ul {
@@ -140,23 +140,35 @@ footer ul li a {
     max-height: 35px;
 }
 
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
+/* Responsive design */
+@media (min-width: 768px) {
+    .text-image-container {
+        flex-direction: row; /* Row direction for larger screens */
+        padding: 0; /* Remove padding on larger screens */
     }
 
-    nav ul {
-        flex-direction: column;
+    .text-image-container .image {
+        margin-right: 20px; /* Space between image and text */
+        margin-bottom: 0;
+        max-width: 50%; /* Limit width of image */
     }
 
-    nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+    .text-image-container .text {
+        text-align: left; /* Align text to the left on larger screens */
+        max-width: 50%; /* Limit width of text section */
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-container {
+        height: 60vh; /* Adjust height for larger screens */
     }
 
-    .footer-left, .footer-middle, .footer-social {
-        width: 100%;
-        text-align: center;
+    .text-image-container .text h2 {
+        font-size: 2em; /* Larger font size for larger screens */
+    }
+
+    .text-image-container .text button {
+        font-size: 1.2em; /* Larger button text for larger screens */
     }
 }

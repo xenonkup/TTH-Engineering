@@ -26,6 +26,9 @@ body{
 }
 
 .vdeiotth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center; /* Center the video container */
     margin-top: 10px;
     margin-bottom: 10px;

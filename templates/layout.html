@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container header-grid">
             <div class="logo-container">
                 <img src="{{ url_for('static', filename='images/Logo/TTH.png') }}" alt="TTH Trading Logo" class="logo">
                 <a href="/service" class="product-service">ผลิตภัณฑ์และบริการ</a>
@@ -29,12 +29,11 @@
     
     <div class="content">
         {% block content %}
-        
         {% endblock %}
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container footer-grid">
             <div class="footer-left">
                 <h3>TTH Trading</h3>
                 <p>เป็นตัวแทนจำหน่ายวัสดุก่อสร้าง</p> 
