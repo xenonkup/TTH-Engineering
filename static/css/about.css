@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+body{
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
 .red-bar {
     background-color: #D2354C;
     height: 60px;
@@ -16,7 +22,14 @@
     text-align: center;
     font-family: KanThai-Regular;
     font-size: 16px;
-}   
+    margin-top: 20px;
+}
+
+.vdeiotth {
+    text-align: center; /* Center the video container */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .imges1 {
     display: flex;
