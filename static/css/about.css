@@ -46,7 +46,7 @@ body{
 }
 
 .text {
-    font-family: KanThai-Regular;
+    font-family: "Noto Sans Thai", sans-serif;
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 0.5px;
