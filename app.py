@@ -19,6 +19,10 @@ def New():
 def activities():
     return render_template('activities.html')
 
+@app.route('/activities2')
+def activities2():
+    return render_template('activities2.html')
+
 @app.route('/service')
 def product_service():
     return render_template('service.html')

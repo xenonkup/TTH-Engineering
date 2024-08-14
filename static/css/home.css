@@ -10,15 +10,13 @@ body {
 .image-container {
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 100%;
-    height: 60vh; /* Viewport height */
-    overflow: hidden;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
+.image-container img{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    width: 90%;
+    margin: 20px;
 }
 
 /* Container for text and image */
@@ -30,12 +28,13 @@ body {
     margin: 20px 0;
 }
 
-.text-image-container .image {
-    margin-bottom: 20px;
+.text-image-container img {
+    width: 90%;
+    margin: 10px;
 }
 
 .text-image-container .text {
-    text-align: center; /* Center text on small screens */
+    text-align: left; /* Center text on small screens */
 }
 
 .text-image-container .text h2 {
@@ -75,10 +74,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .image-container {
-        height: 70vh; /* Adjust height for larger screens */
-    }
-
     .text-image-container .text h2 {
         font-size: 2em; /* Larger font size for larger screens */
     }

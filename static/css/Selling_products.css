@@ -1,70 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap');
-
-body{
-    font-family: "Noto Sans Thai", sans-serif;
+.body{
+  width: 100%;
 }
 
-.sell-product-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.sell-product{
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
   padding: 20px;
 }
 
-.product1-container, .product2-container, .product3-container, .product4-container {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.red-bar {
+.sell-product h1 {
   background-color: #D2354C;
   height: 60px;
   color: #fff;
   padding: 10px 20px;
-  font-family: Arial, sans-serif;
+  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px 4px 0 0;
 }
 
-.red-bar h2 {
-  margin: 0;
-}
-
-.carousel-container {
-  overflow-x: auto;
-}
-
-.carousel {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-}
-
-.carousel-item {
-  min-width: 420px;
-  flex-shrink: 0;
-  text-align: center;
+.product1-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd; /* เพิ่มเส้นขอบ */
+  border-radius: 10px;
+  background-color: #f9f9f9; /* เพิ่มสีพื้นหลัง */
 }
 
-.carousel-item img {
-  width: 420px;
-  height: 420px;
+.product1-container img {
+  width: 250px;  /* Adjust the width */
+  height: 250px; /* Adjust the height */
   border-radius: 4px;
   transition: transform 0.2s;
 }
 
-.carousel-item img:hover {
+.product1-container img:hover {
   transform: scale(1.05);
 }
 
-.carousel-item p {
+.product1-container p {
   margin-top: 5px;
   font-family: Arial, sans-serif;
   color: #333;
@@ -76,25 +56,19 @@ body{
   background: #f9f9f9; 
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 20px;
+.btn{
+  margin-bottom: 20px;
 }
 
-.button-container .btn {
-  font-size: 20px;
+.btn-danger {
+  background-color: #dc3545; /* สีพื้นหลังปุ่ม */
+  border: none; /* ลบขอบของปุ่ม */
   padding: 10px 20px;
-  background-color: #D2354C;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  justify-content: end;
+  border-radius: 5px; /* มุมโค้งมน */
+  font-size: 16px;
+  text-decoration: none; /* ลบเส้นใต้ */
 }
 
-.button-container .btn:hover {
-  background-color: #b52e41;
+.btn-danger:hover {
+  background-color: #c82333; /* สีของปุ่มเมื่อ hover */
 }
-

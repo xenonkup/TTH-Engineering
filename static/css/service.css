@@ -1,73 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap');
 
-body{
+body {
     font-family: "Noto Sans Thai", sans-serif;
-}
-
-h1,h3, p, ul, li, a {
-    color: #fdfdfd; /* Text color */
-}
-
-.container ul, .container li, .container a {
-    margin: 10;
-    padding: 0;
-    color: #000000; /* Text color */
 }
 
 h1 {
     margin-top: 30px;
-    color: black;
-}
-
-h1 {
     font-size: 30px;
     margin-bottom: 20px;
+    color: #000;
 }
 
-/* Product row styles */
-.product-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card-img-top {
+    height: 200px; /* Adjusted height for the image */
+    object-fit: cover;
+    border: 3px;
 }
 
-/* Product item styles */
-.product-item {
-    width: 100%;
-    background-color: #D2354C; /* Background color */
+.card-body {
     padding: 20px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center the text */
 }
 
-.product-item img {
-    width: 200px; /* Set the width */
-    height: 200px; /* Set the height */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-    border-radius: 10px;
-}
-
-.product-item h3 {
+.card-title {
     font-size: 25px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 20px;
 }
 
-.product-item ul li {
-    list-style: none;
-    padding: 10;
-    margin-top: 10px;
+.card {
+    margin-bottom: 50px; /* Reduces space between cards and next element */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.list-unstyled li {
     margin: 10px 0;
 }
 
-.product-item ul li a {
-    color: white;
+.list-unstyled li a {
     text-decoration: none;
 }
 
-.product-item ul li a:hover {
+.list-unstyled li a:hover {
     text-decoration: underline;
 }
 
-
+.btnblack {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+  
+.btnblack .btn-danger  {
+    background-color: #dc3545; /* สีพื้นหลังปุ่ม */
+    border: none; /* ลบขอบของปุ่ม */
+    padding: 10px 20px;
+    border-radius: 5px; /* มุมโค้งมน */
+    font-size: 16px;
+    text-decoration: none; /* ลบเส้นใต้ */
+    color: #fff;
+}
+  
+.btn-danger:hover {
+    background-color: #c82333; /* สีของปุ่มเมื่อ hover */
+}  

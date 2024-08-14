@@ -2,6 +2,7 @@
 
 body{
     font-family: "Noto Sans Thai", sans-serif;
+    width: 100%;
 }
 
 .red-bar {
@@ -9,28 +10,29 @@ body{
     height: 60px;
     color: #fff;
     padding: 5px 50px;
-    font-family: Arial, sans-serif;
   }
+
+.red-bar h2 {
+    color: #fff;
+    margin-top: 10px;
+}  
 
 .header{
     text-align: center;
-    font-family: Arial, sans-serif;
     font-size: 18px;
+    margin-top: 20px;
+}   
+
+.header h3{
+    font-size: 30px;
+    margin-top: 20px;
 }   
 
 .header p{
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
-}
-
-.vdeiotth {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; /* Center the video container */
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 .imges1 {
@@ -53,10 +55,15 @@ body{
     font-weight: normal;
     letter-spacing: 0.5px;
     line-height: 1.5;
-    text-align: center;
-    
-  }
-  
+    background: #ffffff;
+    margin: 10px 40px 10px;
+    padding: 10px;
+}
+
+.text p {
+    text-align: left;
+    margin: 50px;
+}
 
   
 

@@ -8,7 +8,7 @@ body{
   
 .news-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 20px;
@@ -89,4 +89,22 @@ video {
 .image-container:hover .overlay {
   display: block;
 }
-  
+
+.btnblack {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.btnblack .btn-danger  {
+  background-color: #dc3545; /* สีพื้นหลังปุ่ม */
+  border: none; /* ลบขอบของปุ่ม */
+  padding: 10px 20px;
+  border-radius: 5px; /* มุมโค้งมน */
+  font-size: 16px;
+  text-decoration: none; /* ลบเส้นใต้ */
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* สีของปุ่มเมื่อ hover */
+}

@@ -4,35 +4,48 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/service.css') }}">
     <title>ผลิตภัณฑ์และบริการ</title>
 </head>
-    <body>
-        <div class="container">
-            <h1>ผลิตภัณฑ์และบริการ</h1>
-            <div class="product-row">
-                <div class="product-item">
-                    <img src="{{url_for('static',filename = 'images/service/1.jpg')}}" alt="คอนกรีตผสมเสร็จ">
-                    <h3>คอนกรีตผสมเสร็จ</h3>
-                    <ul>
-                        <li><a href="/Concrete_truck_brand">ยี่ห้อรถคอนกรีต</a></li>
-                    </ul>
-                </div>
-                <div class="product-item">
-                    <img src="{{url_for('static', filename='images/service/11.jpg')}}" alt="รูปปูนถุง">
-                    <h3>ซีเมนต์</h3>
-                    <ul>
-                        <li><a href="/cement_products">ผลิตภัณฑ์ปูนซีเมนต์</a></li>
-                    </ul>
-                </div>
-                <div class="product-item">
-                    <img src="{{url_for('static',filename='images/service/2.png')}}" alt="บริการอื่นๆ">
-                    <h3>บริการอื่นๆ</h3>
-                    <ul>
-                        <li><a href="/Selling products">จำหน่ายแผ่นพื้นอิฐมวลเบา</a></li>
-                        <li><a href="/Selling products">จำหน่ายเหล็ก</a></li>
-                        <li><a href="/Selling products">จำหน่ายถุงปูนซีเมนต์</a></li>
-                        <li><a href="/Selling products">รับเหมาก่อสร้าง</a></li>
+<div class="container mt-3">
+    <h1 class="text-center mb-4">ผลิตภัณฑ์และบริการ</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+            <div class="card h-100 text-center bg-danger text-light border-10 shadow-sm">
+                <img src="{{ url_for('static', filename='images/service/1.jpg') }}" class="card-img-top" alt="คอนกรีตผสมเสร็จ">
+                <div class="card-body">
+                    <h3 class="card-title">คอนกรีตผสมเสร็จ</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/Concrete_truck_brand" class="text-light">ยี่ห้อรถคอนกรีต</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="col">
+            <div class="card h-100 text-center bg-danger text-light border-10 shadow-sm">
+                <img src="{{ url_for('static', filename='images/service/11.jpg') }}" class="card-img-top" alt="รูปปูนถุง">
+                <div class="card-body">
+                    <h3 class="card-title">ซีเมนต์</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/cement_products" class="text-light">ผลิตภัณฑ์ปูนซีเมนต์</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center bg-danger text-light border-10 shadow-sm">
+                <img src="{{ url_for('static', filename='images/service/2.png') }}" class="card-img-top" alt="บริการอื่นๆ">
+                <div class="card-body">
+                    <h3 class="card-title">บริการอื่นๆ</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/Selling products" class="text-light">จำหน่ายแผ่นพื้นอิฐมวลเบา</a></li>
+                        <li><a href="/Selling products" class="text-light">จำหน่ายเหล็ก</a></li>
+                        <li><a href="/Selling products" class="text-light">จำหน่ายถุงปูนซีเมนต์</a></li>
+                        <li><a href="/Selling products" class="text-light">รับเหมาก่อสร้าง</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btnblack">
+        <a href="{{ url_for('home') }}" class="btn btn-danger">กลับสู้หน้าแรก</a>
+    </div>
+</div>
 {% endblock %}
