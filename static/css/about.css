@@ -64,3 +64,31 @@ body{
     text-align: left;
     margin: 50px;
 }
+
+.video-container {
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensures the video stays within the rounded border */
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 15px; /* Padding around the video */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 20px auto; /* Center the container with some margin */
+    max-width: 600px; /* Restrict maximum width */
+}
+
+.video-container h4 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-container .ratio {
+    border-radius: 20px;/* ทำให้วิดีโอมีมุมโค้งมนเช่นกัน */
+    overflow: hidden; /* ทำให้วิดีโอไม่ล้นออกจากคอนเทนเนอร์ */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงาสำหรับวิดีโอ */
+}
+
+.video-container video {
+    border-radius: 20px; /* ทำให้วิดีโอมีมุมโค้งมนเหมือนคอนเทนเนอร์ */
+    width: 100%; /* ทำให้วิดีโอพอดีกับคอนเทนเนอร์ */
+}
