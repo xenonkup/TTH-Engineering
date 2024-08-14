@@ -85,6 +85,11 @@ video {
   margin: 30px auto 0;
 }
 
+.image-container h5 {
+  font-size: 18px;
+  text-align: center;
+}
+
 .image-container:hover .overlay {
   display: block;
 }

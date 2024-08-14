@@ -1,52 +1,66 @@
 {% extends "layout.html" %}
+
 {% block content %}
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/activities.css') }}">
 </head>
 <body>
-    <div class="news-container">
-        <h3>ผลงาน</h3>
-        <p>ผลงานที่น่าสนใจของ TTH</p>
-        <div class="content-row">
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/acitivities/1.jpg') }}" alt="รูป">
+    <div class="container my-5 news-container">
+        <h3 class="text-center mb-4">ผลงาน</h3>
+        <p class="text-center mb-4">ผลงานที่น่าสนใจของ TTH</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/acitivities/1.jpg') }}" class="card-img-top" alt="รูป">
+                    <div class="card-body">
+                        <p class="card-text">Review จัดส่ง งานเหล็ก หน้างาน หนองแขม</p>
+                    </div>
                 </div>
-                <p>Review จัดส่ง งานเหล็ก หน้างาน หนองแขม</p>
             </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/acitivities/2.jpg') }}" alt="รูป">
+            <div class="col">
+                <div class="card border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/acitivities/2.jpg') }}" class="card-img-top" alt="รูป">
+                    <div class="card-body">
+                        <p class="card-text">เทพื้น ด้วย คิวมิกซ์ คอนกรีต Q-mix ลูกค้าราชพฤกษ์-พรานนก</p>
+                    </div>
                 </div>
-                <p>เทพื้น ด้วย คิวมิกซ์ คอนกรีต Q-mix ลูกค้าราชพฤกษ์-พรานนก</p>
             </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/acitivities/3.jpg') }}" alt="รูป">
+            <div class="col">
+                <div class="card border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/acitivities/3.jpg') }}" class="card-img-top" alt="รูป">
+                    <div class="card-body">
+                        <p class="card-text">งานรับเหมาก่อสร้างต่อเติมบ้าน ลูกค้าบางนา-เทพารักษ์</p>
+                    </div>
                 </div>
-                <p> งานรับเหมาก่อสร้างต่อเติมบ้าน ลูกค้าบางนา-เทพารักษ์ </p>
             </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/acitivities/4.jpg') }}" alt="รูป">
+            <div class="col">
+                <div class="card border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/acitivities/4.jpg') }}" class="card-img-top" alt="รูป">
+                    <div class="card-body">
+                        <p class="card-text">งานเทคานรั้ว หน้างาน พระราม5</p>
+                    </div>
                 </div>
-                <p> งานเทคานรั้ว หน้างาน พระราม5 </p>
             </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/acitivities/5.jpg') }}" alt="รูป">
+            <div class="col">
+                <div class="card border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/acitivities/5.jpg') }}" class="card-img-top" alt="รูป">
+                    <div class="card-body">
+                        <p class="card-text">Review รีวิว หน้างาน สาย 3 🏗️เทชั้น2 +รถปั้ม แบบปั๊มบูม  พุทธมณฑล สายสาม</p>
+                    </div>
                 </div>
-                <p> Review รีวิว หน้างาน สาย 3 🏗️เทชั้น2 +รถปั้ม แบบปั๊มบูม  พุทธมณฑล สายสาม </p>
             </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/acitivities/6.jpg') }}" alt="รูป">
+            <div class="col">
+                <div class="card border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/acitivities/6.jpg') }}" class="card-img-top" alt="รูป">
+                    <div class="card-body">
+                        <p class="card-text">งาน เสาเข็มเจาะ เล็ก หน้างาน บางบัวทอง</p>
+                    </div>
                 </div>
-                <p> งาน เสาเข็มเจาะ เล็ก หน้างาน บางบัวทอง  </p>
             </div>
         </div>
-        <div class="btnblack">
+        <div class="text-center mt-4 buttom ">
             <a href="{{ url_for('activities2') }}" class="btn btn-danger">ถัดไป</a>
         </div>
+    </div>
 </body>
 {% endblock %}

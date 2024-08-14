@@ -5,56 +5,83 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/New.css') }}">
 </head>
 <body>
-    <div class="news-container">
-        <h2>ข่าวสาร</h2>
-        <p>รวมข่าวสารที่น่าสนใจ</p>
-        <div class="content-row">
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/New/1.png') }}" alt="รูป">
-                </div>
-                <p>ปูนซีเมนต์เป็นวัสดุก่อสร้างที่สำคัญซึ่งใช้ในการก่อสร้างโครงสร้าง อาคาร ถนน 
-                    และทางเท้า ประกอบด้วยแคลเซียมซิลิเกต ไฮดรอกไซด์ อะลูมิเนต และเฟอร์รัสออกไซด์ 
-                    ผสมกับน้ำ ปูนซีเมนต์จะแข็งตัวและกลายเป็นวัสดุแข็งที่ทนทาน</p>
-            </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/New/2.png') }}" alt="รูป">
-                </div>
-                <p>คุณภาพของปูนซีเมนต์อาจแตกต่างกันไปขึ้นอยู่กับปัจจัยหลายประการ ได้แก่:
-                    ประเภทของปูนซีเมนต์:ปูนซีเมนต์ประเภทต่างๆ (ปอร์ตแลนด์, ผสม, พิเศษ) มีคุณสมบัติแตกต่างกันและเหมาะสมกับการใช้งานต่างๆ
-                    แบรนด์และผู้ผลิต</p>
-            </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/New/3.jpg') }}" alt="รูป">
-                </div>
-                <p> องค์ประกอบหลัก 3 ชนิดข้างต้นแล้ว ปูนซีเมนต์ยังมีองค์ประกอบรองอื่นๆ อยู่บ้าง เช่น 
-                   แมกนีเซียมออกไซด์ (MgO) โซเดียมออกไซด์ (Na2O) ไทเทเนียมไดออกไซด์ (TiO2) 
-                   ฟอสฟอรัสเพนโทไซด์ (P2O5) และยิปซั่ม</p>
-            </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <video width="320" height="240" controls>
-                        <source src="{{ url_for('static', filename='images/New/1.1.mp4') }}" type="video/mp4">
-                    </video>
-                    <h5>ความรู้เกี่ยวกับการก่อสร้างบ้านแบบ THH Engineering</h5>
+    <div class="container my-3">
+        <h2 class="text-center mb-3">ข่าวสาร</h2>
+        <p class="text-center mb-2">รวมข่าวสารที่น่าสนใจ</p>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="image-container mb-3">
+                            <img src="{{ url_for('static', filename='images/New/1.png') }}" alt="รูป" class="img-fluid">
+                        </div>
+                        <p>ปูนซีเมนต์เป็นวัสดุก่อสร้างที่สำคัญซึ่งใช้ในการก่อสร้างโครงสร้าง อาคาร ถนน 
+                            และทางเท้า ประกอบด้วยแคลเซียมซิลิเกต ไฮดรอกไซด์ อะลูมิเนต และเฟอร์รัสออกไซด์ 
+                            ผสมกับน้ำ ปูนซีเมนต์จะแข็งตัวและกลายเป็นวัสดุแข็งที่ทนทาน</p>
+                    </div>
                 </div>
             </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <video width="320" height="240" controls>
-                        <source src="{{ url_for('static', filename='images/New/1.2.mp4') }}" type="video/mp4">
-                    </video>
-                    <h5>ขั้นตอนการทำงานของ TTH Engineering</h5>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="image-container mb-3">
+                            <img src="{{ url_for('static', filename='images/New/2.png') }}" alt="รูป" class="img-fluid">
+                        </div>
+                        <p>คุณภาพของปูนซีเมนต์อาจแตกต่างกันไปขึ้นอยู่กับปัจจัยหลายประการ ได้แก่:
+                            ประเภทของปูนซีเมนต์:ปูนซีเมนต์ประเภทต่างๆ (ปอร์ตแลนด์, ผสม, พิเศษ) มีคุณสมบัติแตกต่างกันและเหมาะสมกับการใช้งานต่างๆ
+                            แบรนด์และผู้ผลิต</p>
+                    </div>
                 </div>
             </div>
-            <div class="content-item">
-                <div class="image-container">
-                    <video width="320" height="240" controls>
-                        <source src="{{ url_for('static', filename='images/New/1.3.mp4') }}" type="video/mp4">
-                    </video>
-                    <h5>บริษัท TTH Engineering 2017 จำหน่ายอะไรบ้าง</h5>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="image-container mb-3">
+                            <img src="{{ url_for('static', filename='images/New/3.jpg') }}" alt="รูป" class="img-fluid">
+                        </div>
+                        <p>องค์ประกอบหลัก 3 ชนิดข้างต้นแล้ว ปูนซีเมนต์ยังมีองค์ประกอบรองอื่นๆ อยู่บ้าง เช่น 
+                           แมกนีเซียมออกไซด์ (MgO) โซเดียมออกไซด์ (Na2O) ไทเทเนียมไดออกไซด์ (TiO2) 
+                           ฟอสฟอรัสเพนโทไซด์ (P2O5) และยิปซั่ม</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="image-container mb-3">
+                            <video class="img-fluid" controls>
+                                <source src="{{ url_for('static', filename='images/New/1.1.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <h5 class="mt-2">ความรู้เกี่ยวกับการก่อสร้างบ้านแบบ THH Engineering</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="image-container mb-3">
+                            <video class="img-fluid" controls>
+                                <source src="{{ url_for('static', filename='images/New/1.2.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <h5 class="mt-2">ขั้นตอนการทำงานของ TTH Engineering</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="image-container mb-3">
+                            <video class="img-fluid" controls>
+                                <source src="{{ url_for('static', filename='images/New/1.3.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <h5 class="mt-2">บริษัท TTH Engineering 2017 จำหน่ายอะไรบ้าง</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
