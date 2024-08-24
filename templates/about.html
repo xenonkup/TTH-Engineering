@@ -25,12 +25,25 @@
 
 <div class="video-container mb-4 text-center">
     <h4 class="text-center mb-3">ชมวีดีโอของเรา</h4>
-    <div class="ratio ratio-16x9" style="max-width: 600px; margin: controls;">
-        <video controls autoplay>
+    <div class="ratio ratio-16x9" style="max-width: 600px; margin: auto;">
+        <video controls>
             <source src="{{ url_for('static', filename='video/TTH_5th_Anniverary_2.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const video = document.querySelector('video');
+
+        video.onerror = function() {
+            alert("ไม่สามารถโหลดวิดีโอได้ โปรดตรวจสอบการเชื่อมต่อหรือลองอีกครั้ง.");
+        };
+
+        video.oncanplaythrough = function() {
+            video.play();
+        };
+    });
+</script>
 {% endblock %}
