@@ -39,14 +39,17 @@ body{
     gap: 20px;
   }
   
-.content-item {
-  width: calc(33% - 20px);
-  text-align: center;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #fff;
+.content-item img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  
+.image-container {
+    position: relative;
+    width: 100%;
   }
 
 .card {
@@ -60,10 +63,10 @@ body{
 }
 
 .card-img-top {
-    height: 250px; /* ปรับความสูงของรูป */
+    height: 300px; /* ปรับความสูงของรูป */
     object-fit: cover; /* ทำให้ภาพครอบคลุมพื้นที่ที่กำหนด */
 }
-  
+
 
 .buttom {
   text-align: left;
@@ -82,21 +85,4 @@ body{
 
 .btn-danger:hover {
   background-color: #c82333; /* สีของปุ่มเมื่อ hover */
-}
-
-/* ----------------------------------------------------------------------------------------------------------------------- */
-
-.carousel-item img {
-    object-fit: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ของคอนเทนเนอร์ */
-    height: 500px; /* กำหนดความสูงของรูปภาพ */
-    width: 100%; /* กำหนดความกว้างให้ครอบคลุมคอนเทนเนอร์ */
-    border-radius: 20px; /* มุมโค้งมน */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* เงา */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #343a40; /* เปลี่ยนสีของปุ่มควบคุม */
-    border-radius: 50%; /* ทำให้ปุ่มเป็นวงกลม */
-    padding: 10px;
 }

@@ -1,54 +1,65 @@
 {% extends "layout.html" %}
 {% block content %}
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/acitivities2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/activities1.css') }}">
 </head>
-    <div class="news-container">
-        <h3>ผลงาน</h3>
-        <p>🙇🏻‍♀️🙇🏻🙇🏻‍♂️🏠กราบขอบพระคุณคุณลูกค้า 🏠🙇🏻‍♂️🙇🏻</p>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{{ url_for('static', filename='images/acitivities2/1.jpg') }}" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+<body>
+<div class="container my-5 news-container">
+  <h3 class="text-center mb-4">ออกบูส IRPC</h3>
+  <p class="text-center mb-4">ผลงานที่น่าสนใจของ TTH</p>
+  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-2 g-3">
+      <div class="col">
+          <div class="card border-0 shadow-sm">
+              <img src="{{ url_for('static', filename='images/irpc/1.jpg') }}" class="card-img-top" alt="รูป">
+              <div class="card-body">
+                  <p class="card-text">IRPC: บริษัท ไออาร์พีซี จำกัด (มหาชน)</p>
               </div>
-              <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/acitivities2/2.jpg') }}" class="d-block w-100" alt="...">
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-0 shadow-sm">
+              <img src="{{ url_for('static', filename='images/irpc/2.jpg') }}" class="card-img-top" alt="รูป">
+              <div class="card-body">
+                  <p class="card-text">ห้องเสม็ดและห้องทรายแก้ว วันที่ 26-30 กันยายน 2567</p>
               </div>
-              <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/acitivities2/3.jpg') }}" class="d-block w-100" alt="...">
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-0 shadow-sm">
+              <img src="{{ url_for('static', filename='images/irpc/3.jpg') }}" class="card-img-top" alt="รูป">
+              <div class="card-body">
+                  <p class="card-text">ลงทะเบียนลูกค้าสั่งเสื้อ Office</p>
               </div>
-              <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/acitivities2/4.jpg') }}" class="d-block w-100" alt="...">
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-0 shadow-sm">
+              <img src="{{ url_for('static', filename='images/irpc2/1.jpg') }}" class="card-img-top" alt="รูป">
+              <div class="card-body">
+                  <p class="card-text">สถานที่ สำนักงานคลังชั้น 2 ห้องอบรม อยุธยา วันที่ 4-5 กันยายน 2567</p>
               </div>
-              <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/acitivities2/5.jpg') }}" class="d-block w-100" alt="...">
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-0 shadow-sm">
+              <img src="{{ url_for('static', filename='images/irpc2/2.jpg') }}" class="card-img-top" alt="รูป">
+              <div class="card-body">
+                  <p class="card-text">ลูกค้าวัดไซต์เสื้อ</p>
               </div>
-              <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/acitivities2/6.jpg') }}" class="d-block w-100" alt="...">
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-0 shadow-sm">
+              <img src="{{ url_for('static', filename='images/irpc2/3.jpg') }}" class="card-img-top" alt="รูป">
+              <div class="card-body">
+                  <p class="card-text">เตรียมสถานที่จำหน่ายเสื้อผ้า</p>
               </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <br>
-        <p>เลือกใช้บริการ ซีแพค Cpac  ผ่านทีทีเอช​ เอ็นจิเนียริ่ง2017​ นะจ๊ะ🏘️ไม่ว่าจะงานเล็กงานใหญ่ ต้องการแบบไหนขอให้บอก มีหลากหลายยี่ห้อให้เลือกใช้ งานเร่ง งานด่วน  รีบจัดหาคิวให้เลยน้า ยินดีบริการค่า</p>
-        <div class="btnblack">
+          </div>
+      </div>
+      <div class="btnblack">
         <a href="{{ url_for('activities') }}" class="btn btn-danger">ย้อนกลับ</a>
-        </div>
+    </div>
+  </div>
+</div>
+</body>
 {% endblock %}
