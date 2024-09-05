@@ -49,9 +49,9 @@ body{
     text-align: center;
 }
 
-.cement-products-page .cement-product-item img {
-    width: 350px;
-    height: 350px;
+..cement-product-item img {
+    width: 100%; /* ทำให้รูปขยายเต็มคอลัมน์ */
+    height: auto; /* รักษาสัดส่วนภาพ */
     object-fit: cover;
     border: 2px solid #ddd; 
     border-radius: 5px;
@@ -61,9 +61,10 @@ body{
     transition: transform 0.2s;
 }
 
-.cement-products-page .cement-product-item img:hover {
+.cement-product-item img:hover {
     transform: scale(1.05);
 }
+
 
 .button-container {
     display: flex;
