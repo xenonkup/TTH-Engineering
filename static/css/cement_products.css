@@ -49,7 +49,7 @@ body{
     text-align: center;
 }
 
-..cement-product-item img {
+.cement-product-item img {
     width: 100%; /* ทำให้รูปขยายเต็มคอลัมน์ */
     height: auto; /* รักษาสัดส่วนภาพ */
     object-fit: cover;
