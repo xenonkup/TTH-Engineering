@@ -23,6 +23,14 @@ def activities():
 def activities2():
     return render_template('activities2.html')
 
+@app.route('/activities3')
+def activities3():
+    return render_template('activities3.html')
+
+@app.route('/activities4')
+def activities4():
+    return render_template('activities4.html')
+
 @app.route('/service')
 def product_service():
     return render_template('service.html')
