@@ -13,7 +13,6 @@ body{
     text-align: center;
 }
 
-/* Red Bar Styles */
 .cement-products-page .red-bar {
     background-color: #D2354C;
     height: 60px;
@@ -26,7 +25,7 @@ body{
 
 .cement-products-page .cement-products-container {
     margin: 10px auto;
-    width: 80%;
+    width: 50%;
 }
 
 .cement-products-page .cement-brand-section {
@@ -43,28 +42,30 @@ body{
 
 .cement-products-page .cement-product-item {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    text-align: center;
 }
 
 .cement-product-item img {
-    width: 100%; /* ทำให้รูปขยายเต็มคอลัมน์ */
-    height: auto; /* รักษาสัดส่วนภาพ */
-    object-fit: cover;
+    flex-basis: calc(50% - 10px); /* แบ่งพื้นที่ของแต่ละรูปเป็น 50% */
+    object-fit: cover;  /* รักษาอัตราส่วนภาพ */
     border: 2px solid #ddd; 
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 5px;
     background-color: #fff;
+    align-items: center;
     transition: transform 0.2s;
 }
 
 .cement-product-item img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* ขยายเมื่อ hover */
 }
 
+
+.cement-product-item img:hover {
+    transform: scale(1.05);
+}
 
 .button-container {
     display: flex;
