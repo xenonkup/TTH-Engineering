@@ -55,5 +55,12 @@ Before running this project, ensure you have the following installed:
    
 10. Access the application in your browser at http://127.0.0.1:5000.
 
+```bash
+ใน README นี้ ผมได้สรุปเกี่ยวกับโครงสร้างของโปรเจค `TTH-Engineering` โดยอธิบายการติดตั้ง การใช้งาน และการตั้งค่า ซึ่งเป็นแนวทางที่ดีสำหรับการทำงานร่วมกับโปรเจคที่ใช้ Flask
+
+
+
+
+
 
 
