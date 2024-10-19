@@ -28,21 +28,20 @@ Before running this project, ensure you have the following installed:
 ### Steps
 
 1. Clone this repository:
-   ```bash
    git clone https://github.com/username/tth-engineering.git
 
 2.Navigate to the project directory:
 
- cd tth-engineering
+  cd tth-engineering
 
 3.Create a virtual environment (optional but recommended):
 
-  python -m venv venv
+   python -m venv venv
 
 4. Activate the virtual environment:
 
- For Windows: venv\Scripts\activate
- For macOS/Linux: source venv/bin/activate
+   For Windows: venv\Scripts\activate
+   For macOS/Linux: source venv/bin/activate
 
 5. Install the required dependencies
    pip install -r requirements.txt
