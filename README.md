@@ -32,28 +32,28 @@ Before running this project, ensure you have the following installed:
    git clone https://github.com/username/tth-engineering.git
 
 2.Navigate to the project directory:
- ```bash
- cd tth-engineering
+
+  cd tth-engineering
 
 3.Create a virtual environment (optional but recommended):
-  ```bash
+
   python -m venv venv
   
 4. Activate the virtual environment:
- ```bash
+   
  For Windows: venv\Scripts\activate
-```bash
+ 
  For macOS/Linux: source venv/bin/activate
 
-5. Install the required dependencies
-   ```bash
+6. Install the required dependencies
+   
    pip install -r requirements.txt
 
-6. Run the Flask application:
-   ```bash
+8. Run the Flask application
+   
    flask run
    
-7. Access the application in your browser at http://127.0.0.1:5000.
+10. Access the application in your browser at http://127.0.0.1:5000.
 
 
 
